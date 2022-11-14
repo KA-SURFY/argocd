@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - image: hojin19082/restful_back
-        name: restful_back
+        name: restful-back
         ports:
         - containerPort: 80
         imagePullPolicy: Always
