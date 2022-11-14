@@ -4,9 +4,8 @@ metadata:
   name: spring-boot-docker-service
 spec:
   ports:
-    - name: "8080"
-      port: 8081
-      targetPort: 8080
+    - port: 80
+      targetPort: 8090
   selector:
     app: spring-boot-docker
   type: NodePort
