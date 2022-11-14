@@ -2,9 +2,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   creationTimestamp: null
+  name: spring-boot-docker-deployment
   labels:
-    app: spring-boot-docker-deployment
-  name: spring-boot-docker
+    app: spring-boot-docker
 spec:
   replicas: 1
   selector:
@@ -24,4 +24,4 @@ spec:
         - containerPort: 8080
         imagePullPolicy: Always
       nodeSelector:
-        hostname: 172.16.2.179
+        hostname: 10.105.7.102
