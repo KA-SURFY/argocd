@@ -18,10 +18,5 @@ spec:
         app: spring-boot-docker
     spec:
       containers:
-      - image: hojin19082/restful_back:latest
+      - image: hojin19082/restful_back
         name: restful_back
-        ports:
-        - containerPort: 8090
-        imagePullPolicy: Always
-      nodeSelector:
-        hostname: hojin-36c4536-zhmvw
