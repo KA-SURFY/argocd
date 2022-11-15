@@ -19,7 +19,7 @@ spec:
         app: spring-boot-docker
     spec:
       containers:
-      - image: hojin19082/restful_back
+      - image: hojin19082/restful_back:{jenkins build number}
         name: restful-back
         ports:
         - containerPort: 8090
