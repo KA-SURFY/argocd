@@ -21,6 +21,6 @@ spec:
             - name: MYSQL_ROOT_PASSWORD
               value: "12345"
             - name: MYSQL_DATABASE
-              value: "mysql"
+              value: "comfy"
           ports:
             - containerPort: 3306
