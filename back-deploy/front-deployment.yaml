@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-react-docker-deployment
+  labels:
+    app: nginx-react-docker
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: nginx-react-docker
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: nginx-react-docker
+    spec:
+      containers:
+      - image: hojin19082/restful_front:{jenkins build number}
+        name: restful-back
+        ports:
+        - containerPort: 3000
+        imagePullPolicy: Always
+      nodeSelector:
+        hostname: hojin-36c4536-zhmvw
