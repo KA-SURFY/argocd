@@ -20,7 +20,7 @@ spec:
       - image: hojin19082/restful_front:14
         name: restful-back
         ports:
-        - containerPort: 3000
+        - containerPort: 80
         imagePullPolicy: Always
       nodeSelector:
         hostname: hojin-36c4536-zhmvw
