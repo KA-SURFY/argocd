@@ -4,9 +4,9 @@ metadata:
   name: nginx-react-docker-service
 spec:
   ports:
-    - port: 3000
+    - port: 80
       protocol: TCP
-      targetPort: 80
+      targetPort: 3000
   selector:
     app: nginx-react-docker-service
   type: LoadBalancer
