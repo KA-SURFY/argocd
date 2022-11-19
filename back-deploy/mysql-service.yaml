@@ -6,6 +6,7 @@ spec:
   selector:
     app: mysql-docker 
   ports:
-    - protocol: TCP
-      port: 3306
+    - name: http
+      protocol: TCP
+      port: 80
       targetPort: 3306
