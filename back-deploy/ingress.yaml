@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+ name: nginx-ingress
+ namespace: ingress-nginx
+ annotations:
+   kubernetes.io/ingress.class: "nginx"
+   ingress.kubernetes.io/ssl-redirect: "false"
+   nginx.ingress.kubernetes.io/proxy-body-size: 500m
+   nginx.ingress.kubernetes.io/enable-cors: "true"
+   nginx.ingress.kubernetes.io/cors-allow-origin: "http://www.commfy.shop"
+   nginx.ingress.kubernetes.io/cors-allow-headers: "accesstoken,refreshtoken,withcredentials,content-type"
+   nginx.ingress.kubernetes.io/cors-allow-methods: "*"
+spec:
+  rules:
+  - http:
+     paths:
+     - path: /
+       pathType: Prefix
+       backend:
+          service:
+              name: spring-boot-docker-service
+              port:
+                 number: 80
