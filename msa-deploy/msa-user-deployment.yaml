@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: msa-user-deployment
+  labels:
+    app: msa-user
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: msa-user
+  template:
+    metadata:
+      labels:
+        app: msa-user
+    spec:
+      containers:
+      - name: msa-user
+        image: hojin19082/msa-user:{jenkins build number}
+        ports:
+        - containerPort: 8083
+        imagePullPolicy: Always

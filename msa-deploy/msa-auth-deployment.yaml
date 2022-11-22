@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: msa-auth-deployment
+  labels:
+    app: msa-auth
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: msa-auth
+  template:
+    metadata:
+      labels:
+        app: msa-auth
+    spec:
+      containers:
+      - name: msa-auth
+        image: hojin19082/msa-auth:{jenkins build number}
+        ports:
+        - containerPort: 8080
+        imagePullPolicy: Always
