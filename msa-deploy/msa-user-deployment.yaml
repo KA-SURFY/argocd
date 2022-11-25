@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: msa-user
-        image: hojin19082/msa-user:{jenkins build number}
+        image: hojin19082/msa-user:1
         ports:
         - containerPort: 8083
         imagePullPolicy: Always
