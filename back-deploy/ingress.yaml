@@ -11,9 +11,6 @@ metadata:
    nginx.ingress.kubernetes.io/cors-allow-origin: "http://www.commfy.shop"
    nginx.ingress.kubernetes.io/cors-allow-headers: "accesstoken,refreshtoken,withcredentials,content-type"
    nginx.ingress.kubernetes.io/cors-allow-methods: "*"
-   nginx.ingress.kubernetes.io/configuration-snippet: |
-        more_set_headers 'Auth-Token: $auth_cookie';
-        more_set_headers 'Access-Control-Expose-Headers: auth-token';
 spec:
   rules:
   - http:
