@@ -162,3 +162,11 @@ spec:
             name: msa-respondent-service
             port: 
               number: 80
+              
+      - path: /auth
+        pathType: Prefix
+        backend:
+          service:
+            name: msa-auth-service
+            port: 
+              number: 80
