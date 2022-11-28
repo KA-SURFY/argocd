@@ -6,6 +6,6 @@ spec:
   selector:
     app: msa-post
   ports:  
-  - port: 8081
+  - port: 80
     protocol: TCP
     targetPort: 8081

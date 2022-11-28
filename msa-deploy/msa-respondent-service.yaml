@@ -6,6 +6,6 @@ spec:
   selector:
     app: msa-respondent
   ports:  
-  - port: 8084
+  - port: 80
     protocol: TCP
     targetPort: 8084
