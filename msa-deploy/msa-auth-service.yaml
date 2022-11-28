@@ -9,4 +9,5 @@ spec:
     app: msa-auth
   ports: 
   - port: 80
+    protocol: TCP
     targetPort: 8080
