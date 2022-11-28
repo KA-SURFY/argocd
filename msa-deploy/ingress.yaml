@@ -25,7 +25,7 @@ spec:
           service:
             name: msa-post-service
             port: 
-              number: 80
+              number: 8081
           
       - path: /posting
         pathType: Prefix
@@ -33,7 +33,7 @@ spec:
           service:
             name: msa-post-service
             port: 
-              number: 80
+              number: 8081
           
       - path: /createPost
         pathType: Prefix
@@ -41,7 +41,7 @@ spec:
           service:
             name: msa-post-service
             port: 
-              number: 80
+              number: 8081
           
       - path: /survey
         pathType: Prefix
@@ -49,7 +49,7 @@ spec:
           service:
             name: msa-survey-service
             port: 
-              number: 80
+              number: 8082
           
       - path: /created-survey
         pathType: Prefix
@@ -57,7 +57,7 @@ spec:
           service:
             name: msa-survey-service
             port: 
-              number: 80
+              number: 8082
           
       - path: /bookmark
         pathType: Prefix
@@ -65,7 +65,7 @@ spec:
           service:
             name: msa-post-service
             port: 
-              number: 80
+              number: 8081
       
       - path: /myPage
         pathType: Prefix
@@ -73,7 +73,7 @@ spec:
           service:
             name: msa-post-service
             port: 
-              number: 80
+              number: 8081
           
       - path: /load
         pathType: Prefix
@@ -81,7 +81,7 @@ spec:
           service:
             name: msa-survey-service
             port: 
-              number: 80
+              number: 8082
           
       - path: /respondent
         pathType: Prefix
@@ -89,7 +89,7 @@ spec:
           service:
             name: msa-respondent-service
             port: 
-              number: 80
+              number: 8084
           
       - path: /surveys
         pathType: Prefix
@@ -97,7 +97,7 @@ spec:
           service:
             name: msa-survey-service
             port: 
-              number: 80
+              number: 8082
           
       - path: /result
         pathType: Prefix
@@ -105,15 +105,15 @@ spec:
           service:
             name: msa-respondent-service
             port: 
-              number: 80
+              number: 8084
 
       - path: /react_to_flask
         pathType: Prefix
         backend:
           service:
-            name: flask-service
+            name: flask-service-service
             port: 
-              number: 80
+              number: 5000
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
@@ -136,7 +136,7 @@ spec:
           service:
             name: msa-post-service
             port: 
-              number: 80
+              number: 8081
           
       - path: /post
         pathType: Prefix
@@ -144,7 +144,7 @@ spec:
           service:
             name: msa-post-service
             port: 
-              number: 80
+              number: 8081
           
       - path: /search
         pathType: Prefix
@@ -152,7 +152,7 @@ spec:
           service:
             name: msa-post-service
             port: 
-              number: 80
+              number: 8081
 
       - path: /login
         pathType: Prefix
@@ -160,7 +160,7 @@ spec:
           service:
             name: msa-user-service
             port: 
-              number: 80
+              number: 8083
       
       - path: /logout
         pathType: Prefix
@@ -168,12 +168,11 @@ spec:
           service:
             name: msa-user-service
             port: 
-              number: 80
-
+              number: 8083
       - path: /api/deletesurvey
         pathType: Prefix
         backend:
           service:
             name: msa-respondent-service
             port: 
-              number: 80
+              number: 8084
