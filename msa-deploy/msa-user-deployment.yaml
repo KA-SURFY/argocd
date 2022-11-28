@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: msa-user
-        image: hojin19082/msa-user:6
+        image: hojin19082/msa-user:8
         ports:
         - containerPort: 8083
         imagePullPolicy: Always
