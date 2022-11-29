@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: msa-auth
-        image: hojin19082/msa-auth:27
+        image: hojin19082/msa-auth:29
         ports:
         - containerPort: 8080
         imagePullPolicy: Always
