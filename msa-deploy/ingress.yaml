@@ -75,14 +75,6 @@ spec:
             port: 
               number: 80
           
-      - path: /load
-        pathType: Prefix
-        backend:
-          service:
-            name: msa-survey-service
-            port: 
-              number: 80
-          
       - path: /respondent
         pathType: Prefix
         backend:
@@ -175,6 +167,14 @@ spec:
         backend:
           service:
             name: msa-respondent-service
+            port: 
+              number: 80
+              
+      - path: /load
+        pathType: Prefix
+        backend:
+          service:
+            name: msa-survey-service
             port: 
               number: 80
        
