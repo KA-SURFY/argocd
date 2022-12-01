@@ -107,14 +107,6 @@ spec:
             port: 
               number: 80
               
-      - path: /api/deletesurvey
-        pathType: Prefix
-        backend:
-          service:
-            name: msa-respondent-service
-            port: 
-              number: 80
-              
       - path: /load
         pathType: Prefix
         backend:
