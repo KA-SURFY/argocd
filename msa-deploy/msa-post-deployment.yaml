@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: msa-post
-        image: hojin19082/msa-post:9
+        image: hojin19082/msa-post:10
         ports:
         - containerPort: 8081
         imagePullPolicy: Always
