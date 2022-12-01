@@ -114,6 +114,14 @@ spec:
             name: msa-survey-service
             port: 
               number: 80
+      
+      - path: /post
+        pathType: Prefix
+        backend:
+          service:
+            name: msa-post-service
+            port: 
+              number: 80
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
