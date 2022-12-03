@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: msa-respondent
-        image: hojin19082/msa-respondent:27
+        image: hojin19082/msa-respondent:28
         ports:
         - containerPort: 8084
         imagePullPolicy: Always
