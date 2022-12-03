@@ -170,20 +170,14 @@ spec:
             name: msa-respondent-service
             port: 
               number: 80
-              
-      - path: /load
+      
+      - path: /react_to_flask
         pathType: Prefix
         backend:
           service:
-            name: msa-survey-service
+            name: flask-service
             port: 
               number: 80
               
-      - path: /respondent
-        pathType: Prefix
-        backend:
-          service:
-            name: msa-respondent-service
-            port: 
-              number: 80
+      
        
