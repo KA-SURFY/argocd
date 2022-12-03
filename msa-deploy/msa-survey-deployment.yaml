@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: msa-survey
-        image: hojin19082/msa-survey:69
+        image: hojin19082/msa-survey:70
         ports:
         - containerPort: 8082
         imagePullPolicy: Always
