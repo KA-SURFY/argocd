@@ -17,7 +17,7 @@ spec:
         app: nginx-react
     spec:
       containers:
-      - image: hojin19082/restful_front:31
+      - image: hojin19082/restful_front:33
         name: restful-front
         ports:
         - containerPort: 80
