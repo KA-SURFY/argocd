@@ -17,7 +17,7 @@ spec:
         app: sa-project
     spec:
       containers:
-      - image: hojin19082/sa-project:{jenkins build number}
+      - image: hojin19082/sa-project:7
         name: sa-project
         ports:
         - containerPort: 8080
