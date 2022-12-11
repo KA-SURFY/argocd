@@ -19,9 +19,9 @@ spec:
   tls:
   - secretName: comfytls
     hosts:
-    - www.commfy.shop
+    - 210.109.60.160
   rules:
-  - host: www.commfy.shop
+  - host: 210.109.60.160
     http:
       paths:
       - path: /selectSurvey
