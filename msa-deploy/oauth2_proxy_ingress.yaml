@@ -12,7 +12,7 @@ metadata:
     nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
 spec:
   tls:
-    secretName: comfytls
+  - secretName: comfytls
   rules:
   - http:
       paths:
