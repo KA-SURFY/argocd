@@ -25,7 +25,7 @@ spec:
           service:
             name: msa-post-service
             port: 
-              number: 800
+              number: 80
           
       - path: /posting
         pathType: Prefix
