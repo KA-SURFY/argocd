@@ -9,6 +9,10 @@ metadata:
     nginx.ingress.kubernetes.io/cors-allow-headers: "accesstoken,refreshtoken,withcredentials"
     nginx.ingress.kubernetes.io/cors-allow-methods: "*"
 spec:
+  tls:
+  - hosts:
+    - www.commfy.shop
+    secretName: ab-tls
   rules:
   - http:
       paths:
