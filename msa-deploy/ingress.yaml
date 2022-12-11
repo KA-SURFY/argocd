@@ -121,9 +121,9 @@ metadata:
     nginx.ingress.kubernetes.io/cors-allow-methods: "*"
 spec:
   tls:
-  - hosts:
+  - secretName: comfytls
+    hosts:
     - www.commfy.shop
-    secretName: comfytls
   rules:
   - http:
       paths:
