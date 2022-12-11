@@ -18,8 +18,11 @@ metadata:
 spec:
   tls:
   - secretName: comfytls
+    hosts:
+    - www.commfy.shop
   rules:
-  - http:
+  - host: www.commfy.shop
+    http:
       paths:
       - path: /selectSurvey
         pathType: Prefix
@@ -124,8 +127,11 @@ metadata:
 spec:
   tls:
   - secretName: comfytls
+    hosts:
+    - www.commfy.shop
   rules:
-  - http:
+  - host: www.commfy.shop
+    http:
       paths:
       - path: /community
         pathType: Prefix
