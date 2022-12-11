@@ -13,8 +13,7 @@ metadata:
 spec:
   tls:
   - hosts:
-    - www.commfy.shop
-    secretName: ab-tls
+      secretName: comfytls
   rules:
   - http:
       paths:
