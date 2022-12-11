@@ -129,8 +129,7 @@ spec:
     hosts:
     - www.commfy.shop
   rules:
-  - host: www.commfy.shop
-    http:
+  - http:
       paths:
       - path: /community
         pathType: Prefix
