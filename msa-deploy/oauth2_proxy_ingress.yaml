@@ -11,8 +11,6 @@ metadata:
 spec:
   tls:
   - secretName: comfytls
-    hosts:
-    - www.commfy.shop
   rules:
   - http:
       paths:
