@@ -21,7 +21,8 @@ spec:
     hosts:
     - www.commfy.shop
   rules:
-  - http:
+  - host: "www.commfy.shop"
+    http:
       paths:
       - path: /selectSurvey
         pathType: Prefix
@@ -129,7 +130,8 @@ spec:
     hosts:
     - www.commfy.shop
   rules:
-  - http:
+  - host: "www.commfy.shop"
+    http:
       paths:
       - path: /community
         pathType: Prefix
