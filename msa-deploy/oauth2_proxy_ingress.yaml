@@ -10,7 +10,7 @@ metadata:
     nginx.ingress.kubernetes.io/cors-allow-methods: "*"
 spec:
   rules:
-  - https:
+  - http:
       paths:
       - path: /auth
         pathType: ImplementationSpecific
