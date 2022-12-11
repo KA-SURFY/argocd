@@ -12,8 +12,6 @@ metadata:
     nginx.ingress.kubernetes.io/cors-allow-origin: "https://www.commfy.shop, https://localhost:3000"
     nginx.ingress.kubernetes.io/cors-allow-headers: "accesstoken,refreshtoken,withcredentials,content-type"
     nginx.ingress.kubernetes.io/cors-allow-methods: "*"
-    nginx.ingress.kubernetes.io/secure-backends: "true"
-    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
     nginx.ingress.kubernetes.io/configuration-snippet: |
         more_set_headers 'Auth-Token: $auth_cookie';
         more_set_headers 'Access-Control-Expose-Headers: auth-token';
@@ -120,9 +118,7 @@ metadata:
     nginx.ingress.kubernetes.io/enable-cors: "true"
     nginx.ingress.kubernetes.io/cors-allow-origin: "http://www.commfy.shop, http://localhost:3000"
     nginx.ingress.kubernetes.io/cors-allow-headers: "*"
-    nginx.ingress.kubernetes.io/cors-allow-methods: "*"
-    nginx.ingress.kubernetes.io/secure-backends: "true"
-    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"             
+    nginx.ingress.kubernetes.io/cors-allow-methods: "*"         
 spec:
   rules:
   - http:
