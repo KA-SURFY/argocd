@@ -19,9 +19,7 @@ metadata:
         more_set_headers 'Access-Control-Expose-Headers: auth-token';
 spec:
   tls:
-  - hosts:
-    - www.commfy.shop
-    secretName: ab-tls
+  - secretName: ab-tls
   rules:
   - http:
       paths:
