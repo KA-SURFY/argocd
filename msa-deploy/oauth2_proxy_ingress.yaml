@@ -5,12 +5,12 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: "nginx"
     nginx.ingress.kubernetes.io/enable-cors: "true"
-    nginx.ingress.kubernetes.io/cors-allow-origin: "http://www.commfy.shop"
+    nginx.ingress.kubernetes.io/cors-allow-origin: "https://www.commfy.shop"
     nginx.ingress.kubernetes.io/cors-allow-headers: "accesstoken,refreshtoken,withcredentials"
     nginx.ingress.kubernetes.io/cors-allow-methods: "*"
 spec:
   rules:
-  - http:
+  - https:
       paths:
       - path: /auth
         pathType: ImplementationSpecific
@@ -18,4 +18,4 @@ spec:
           service:
             name: msa-auth-service
             port: 
-              number: 80
+              number: 443
