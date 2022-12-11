@@ -11,11 +11,8 @@ metadata:
 spec:
   tls:
   - secretName: comfytls
-    hosts:
-    - 210.109.60.160
   rules:
-  - host: 210.109.60.160
-    http:
+  - http:
       paths:
       - path: /auth
         pathType: ImplementationSpecific
