@@ -16,6 +16,10 @@ metadata:
         more_set_headers 'Auth-Token: $auth_cookie';
         more_set_headers 'Access-Control-Expose-Headers: auth-token';
 spec:
+  tls:
+  - secretName: comfytls
+    hosts:
+    - www.commfy.shop
   rules:
   - http:
       paths:
