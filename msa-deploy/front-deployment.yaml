@@ -20,5 +20,5 @@ spec:
       - image: hojin19082/restful_front:7
         name: restful-front
         ports:
-        - containerPort: 442
+        - containerPort: 443
         imagePullPolicy: Always
