@@ -120,7 +120,9 @@ metadata:
     nginx.ingress.kubernetes.io/enable-cors: "true"
     nginx.ingress.kubernetes.io/cors-allow-origin: "http://www.commfy.shop, http://localhost:3000"
     nginx.ingress.kubernetes.io/cors-allow-headers: "*"
-    nginx.ingress.kubernetes.io/cors-allow-methods: "*"             
+    nginx.ingress.kubernetes.io/cors-allow-methods: "*"
+    nginx.ingress.kubernetes.io/secure-backends: "true"
+    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"             
 spec:
   rules:
   - http:
