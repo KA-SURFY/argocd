@@ -125,7 +125,9 @@ metadata:
     nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"      
 spec:
   tls:
-  - secretName: comfytls
+  - hosts:
+    - www.commfy.shop
+    secretName: comfytls
   rules:
   - http:
       paths:
