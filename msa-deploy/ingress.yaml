@@ -17,7 +17,9 @@ metadata:
         more_set_headers 'Access-Control-Expose-Headers: auth-token';
 spec:
   tls:
-  - secretName: comfytls
+  - hosts:
+    - www.commfy.shop
+    secretName: comfytls
   rules:
   - http:
       paths:
@@ -123,7 +125,9 @@ metadata:
     nginx.ingress.kubernetes.io/cors-allow-methods: "*"
 spec:
   tls:
-  - secretName: comfytls
+  - hosts:
+    - www.commfy.shop
+    secretName: comfytls
   rules:
   - http:
       paths:
