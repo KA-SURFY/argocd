@@ -16,6 +16,10 @@ metadata:
         more_set_headers 'Auth-Token: $auth_cookie';
         more_set_headers 'Access-Control-Expose-Headers: auth-token';
 spec:
+  tls:
+  - hosts:
+    - www.commfy.shop
+    secretName: ab-tls
   rules:
   - http:
       paths:
@@ -120,6 +124,10 @@ metadata:
     nginx.ingress.kubernetes.io/cors-allow-headers: "*"
     nginx.ingress.kubernetes.io/cors-allow-methods: "*"         
 spec:
+  tls:
+  - hosts:
+    - www.commfy.shop
+    secretName: ab-tls
   rules:
   - http:
       paths:
