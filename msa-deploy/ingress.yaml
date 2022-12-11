@@ -17,7 +17,7 @@ metadata:
         more_set_headers 'Access-Control-Expose-Headers: auth-token';
 spec:
   rules:
-  - https:
+  - http:
       paths:
       - path: /selectSurvey
         pathType: Prefix
@@ -121,7 +121,7 @@ metadata:
     nginx.ingress.kubernetes.io/cors-allow-methods: "*"             
 spec:
   rules:
-  - https:
+  - http:
       paths:
       - path: /community
         pathType: Prefix
