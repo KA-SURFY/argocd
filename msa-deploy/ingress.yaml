@@ -19,7 +19,7 @@ metadata:
         more_set_headers 'Access-Control-Expose-Headers: auth-token';
 spec:
   tls:
-    secretName: comfytls
+  - secretName: comfytls
   rules:
   - http:
       paths:
@@ -127,7 +127,7 @@ metadata:
     nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"      
 spec:
   tls:
-    secretName: comfytls
+  - secretName: comfytls
   rules:
   - http:
       paths:
