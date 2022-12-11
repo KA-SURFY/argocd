@@ -8,8 +8,6 @@ metadata:
     nginx.ingress.kubernetes.io/cors-allow-origin: "https://www.commfy.shop"
     nginx.ingress.kubernetes.io/cors-allow-headers: "accesstoken,refreshtoken,withcredentials"
     nginx.ingress.kubernetes.io/cors-allow-methods: "*"
-    nginx.ingress.kubernetes.io/secure-backends: "true"
-    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
 spec:
   rules:
   - http:
