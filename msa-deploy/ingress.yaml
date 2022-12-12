@@ -124,10 +124,8 @@ metadata:
 spec:
   tls:
   - secretName: comfytls
-    hosts:
-    - www.commfy.shop
   rules:
-  - host: www.commfy.shop
+    host: www.commfy.shop
     http:
       paths:
       - path: /community
