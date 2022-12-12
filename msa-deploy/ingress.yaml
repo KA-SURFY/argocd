@@ -125,8 +125,7 @@ spec:
   tls:
   - secretName: comfytls
   rules:
-  - host: www.commfy.shop
-    http:
+  - http:
       paths:
       - path: /community
         pathType: Prefix
