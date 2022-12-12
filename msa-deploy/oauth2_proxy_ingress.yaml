@@ -14,7 +14,8 @@ spec:
     hosts:
     - www.commfy.shop
   rules:
-  - http:
+  - host: www.commfy.shop
+    http:
       paths:
       - path: /auth
         pathType: ImplementationSpecific
