@@ -17,7 +17,7 @@ spec:
         app: msa-servicea
     spec:
       containers:
-      - image: hojin19082/servicea:{jenkins build number}
+      - image: hojin19082/servicea:6
         name: msa-servicea
         ports:
         - containerPort: 8080
