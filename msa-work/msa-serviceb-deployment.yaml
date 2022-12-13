@@ -17,7 +17,7 @@ spec:
         app: msa-serviceb
     spec:
       containers:
-      - image: hojin19082/serviceb:{jenkins build number}
+      - image: hojin19082/serviceb:7
         name: msa-serviceb
         ports:
         - containerPort: 8081
