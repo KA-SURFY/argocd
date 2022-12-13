@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: msa-serviceb-deployment
+  labels:
+    app: msa-serviceb
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: msa-serviceb
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: msa-serviceb
+    spec:
+      containers:
+      - image: hojin19082/serviceb:{jenkins build number}
+        name: msa-serviceb
+        ports:
+        - containerPort: 8081
+        imagePullPolicy: Always
