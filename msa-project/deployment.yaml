@@ -1,1 +1,24 @@
-
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sa-project-deployment
+  labels:
+    app: sa-project
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: sa-project
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: sa-project
+    spec:
+      containers:
+      - image: sosqre0105/servicea
+        name: sa-project
+        ports:
+        - containerPort: 8080
+        imagePullPolicy: Always
