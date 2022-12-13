@@ -17,7 +17,7 @@ spec:
         app: sa-project2
     spec:
       containers:
-      - image: sosqre0105/serviceb:1
+      - image: sosqre0105/serviceb:2
         name: sa-project2
         ports:
         - containerPort: 8081
